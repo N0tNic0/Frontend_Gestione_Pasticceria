@@ -1,0 +1,191 @@
+.footer {
+  /* margin-top: 30px; */
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.footer__banner {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  opacity: 0.8;
+}
+.footer__content {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+}
+.footer__header--logo img {
+  height: 220px;
+}
+.footer__contact {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__contact--item {
+  margin: 5px 0;
+}
+
+.footer__contact--icon {
+  color: rgb(233, 233, 233);
+  font-size: 60px;
+  transition: all 0.4s;
+}
+.footer__contact--icon:hover {
+  color: chocolate;
+}
+.footer__contact--item--phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contact--paragraph {
+  font-size: 22px;
+  font-style: italic;
+  color: rgb(233, 233, 233);
+}
+.footer__copyright--paragraph {
+  font-size: 12px;
+  color: rgb(175, 175, 175);
+  margin-top: 20px;
+  bottom: 5px;
+}
+.footer__contact--item--phone .footer__contact--paragraph .phone__link {
+  /* text-decoration: none; */
+  color: rgb(233, 233, 233);
+}
+
+@media (max-width: 1024px) {
+  .footer__header--logo img {
+    height: 160px;
+  }
+
+  .footer__contact--paragraph {
+    font-size: 18px;
+  }
+  .footer__copyright--paragraph {
+    font-size: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .footer__banner {
+    text-align: center;
+    height: 100vh;
+    opacity: 0.8;
+  }
+  .footer__header--logo img {
+    height: 130px;
+  }
+
+  .footer__contact--paragraph {
+    font-size: 14px;
+  }
+  .footer__copyright--paragraph {
+    font-size: 10px;
+  }
+  .footer__contact--icon {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__header--logo img {
+    height: 100px;
+    margin-bottom: 0;
+  }
+  .footer__banner {
+    text-align: center;
+    height: 60vh;
+    opacity: 0.8;
+  }
+  .footer__contact {
+    margin-top: 0px;
+  }
+  .footer__contact--paragraph {
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .footer__copyright--paragraph {
+    font-size: 10px;
+  }
+  .footer__contact--icon {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__header--logo img {
+    height: 90px;
+  }
+  .footer__banner {
+    text-align: center;
+    height: 45vh;
+    opacity: 0.8;
+  }
+  .footer__content {
+    top: 50%;
+  }
+  .footer__contact--paragraph {
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .footer__contact--icon {
+    font-size: 20px;
+  }
+
+  .footer__copyright--paragraph {
+    font-size: 9px;
+  }
+}
+.footer__contact--phoneicon {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
